@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
 
-const pdf = 'http://localhost:3000/static/document/catalog_compressed.pdf' 
+const pdf = 'https://revendamycode.vercel.app/static/document/catalog_compressed.pdf' 
 
 export function Catalog({catalogRef}) {
     const catalogWidth = useBreakpointValue({
