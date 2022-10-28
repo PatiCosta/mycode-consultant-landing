@@ -6,27 +6,25 @@ export default class MyDocument extends Document {
          <Html>
          <Head>
           {/* <!-- HTML Meta Tags --> */}
-          <meta name="description" content="O toque de beleza que faltava no seu dia"/>
-          <meta name="keywords" content="venda, revenda, Venda, Revenda, Daterra, Loja, Consultora, daterra, loja, lojas, consultora, revendas, vendas, dinheiro, renda, renda extra, extra, enriquecer, trabalho, grátis, produtos, cosméticos, revendedor, revendedora, consultor, rica, produtos, inscreva-se, seja uma revendedora, seja uma consultora, seja um consultor, seja um revendedor, site, online, vender, revender, lucrar, enriquecer"/>
+          <meta name="description" content="Pensado em você, feito para sua pele"/>
+          <meta name="keywords" content="venda, revenda, Venda, Revenda, Mycode, Loja, Consultora, mycode, loja, lojas, consultora, revendas, vendas, dinheiro, renda, renda extra, extra, enriquecer, trabalho, grátis, produtos, cosméticos, revendedor, revendedora, consultor, rica, produtos, inscreva-se, seja uma revendedora, seja uma consultora, seja um consultor, seja um revendedor, site, online, vender, revender, lucrar, enriquecer, cosmético, pele, rosto, corpo, skincare, cósmetica, personalizado, seu, sua, cuidado, sustentável"/>
 
          {/* <!-- Facebook Meta Tags --> */}
-         <meta property="og:url" content="https://revenda.daterra.com.br/"/>
+         <meta property="og:url" content="https://revendamycode.vercel.app/"/>
          <meta property="og:type" content="website"/>
-         <meta property="og:title" content="Daterra - Seja um(a) consultor(a)"/>
-         <meta property="og:description" content="Qualidade que se sente"/>
-         <meta property="og:image" content="https://revenda.daterra.com.br/static/img/daterra-meta.png"/>
+         <meta property="og:title" content="My Code - Seja um(a) consultor(a)"/>
+         <meta property="og:description" content="Pensado em você, feito para sua pele"/>
+         <meta property="og:image" content="https://revendamycode.vercel.app/static/img/MYCODE_TM-LOGO-MARROM-ESCURO-RGB-01.png"/>
 
          {/* <!-- Twitter Meta Tags --> */}
          <meta name="twitter:card" content="summary_large_image"/>
-         <meta property="twitter:domain" content="daterra.com.br"/>
-         <meta property="twitter:url" content="https://revenda.daterra.com.br//"/>
-         <meta name="twitter:title" content="Daterra - Seja um(a) consultor(a)"/>
-         <meta name="twitter:description" content="O toque de beleza que faltava no seu dia"/>
-         <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/daterra-meta.png"/>
+         <meta property="twitter:domain" content="revendamycode.vercel.app"/>
+         <meta property="twitter:url" content="https://revendamycode.vercel.app/"/>
+         <meta name="twitter:title" content="My Code - Seja um(a) consultor(a)"/>
+         <meta name="twitter:description" content="Pensado em você, feito para sua pele"/>
+         <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/MYCODE_TM-LOGO-MARROM-ESCURO-RGB-01.png"/>
 
 
-         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"/>
          <link rel="shortcut icon" href="/static/img/dat-icon.ico" /> 
          </Head>
             <body>
