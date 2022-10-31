@@ -5,7 +5,11 @@ const variantOutlined = () => ({
     _focus: {
       borderColor: "#caded8",
       boxShadow: "0 0 0 2px #caded8"
-    }
+    },
+    _autofill: {
+      textFillColor: "#e6cebe",
+      transition: "background-color 5000s ease-in-out 0s",
+    },
   }
 });
 
@@ -14,7 +18,11 @@ const variantFilled = () => ({
     _focus: {
       borderColor: "#caded8",
       boxShadow: "0 0 0 1px #caded8"
-    }
+    },
+    _autofill: {
+      textFillColor: "#e6cebe",
+      transition: "background-color 5000s ease-in-out 0s",
+    },
   }
 });
 
@@ -23,7 +31,11 @@ const variantFlushed = () => ({
     _focus: {
       borderColor: "#caded8",
       boxShadow: "0 1px 0 0 #caded8"
-    }
+    },
+    _autofill: {
+      textFillColor: "#e6cebe",
+      transition: "background-color 5000s ease-in-out 0s",
+    },
   }
 });
 
@@ -38,7 +50,7 @@ export const theme = extendTheme({
         outline: variantOutlined,
         filled: variantFilled,
         flushed: variantFlushed
-      }
+      },
     },
     Select: {
       variants: {
