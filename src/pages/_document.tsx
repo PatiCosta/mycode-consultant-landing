@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
          <meta property="og:title" content="My Code - Seja um(a) consultor(a)"/>
          <meta property="og:site_name" content="My Code - Seja um(a) consultor(a)" />
          <meta property="og:description" content="Pensado em você, feito para sua pele"/>
-         <meta property="og:image" itemProp='image' content="https://revendamycode.vercel.app/static/img/mycodeMeta.png"/>
+         <meta property="og:image" itemProp='image' content="https://revendamycode.vercel.app/static/img/mycodeMeta-circle.png"/>
 
          {/* <!-- Twitter Meta Tags --> */}
          <meta name="twitter:card" content="summary_large_image"/>
@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
          <meta property="twitter:url" content="https://revendamycode.vercel.app//"/>
          <meta name="twitter:title" content="My Code - Seja um(a) consultor(a)"/>
          <meta name="twitter:description" content="Pensado em você, feito para sua pele"/>
-         <meta name="twitter:image" content="https://revendamycode.vercel.app/static/img/mycodeMeta.png"/>
+         <meta name="twitter:image" content="https://revendamycode.vercel.app/static/img/mycodeMeta-circle.png"/>
 
 
          <link rel="shortcut icon" href="/static/img/iconMyCode.ico" /> 
