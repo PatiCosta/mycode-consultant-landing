@@ -11,8 +11,8 @@ export function Banner() {
     if(isLg) {
         return (
             <Grid
-                w='100vw'
-                templateColumns='32vw 68vw'
+                w='100%'
+                templateColumns='32% 68%'
             >
                 <Flex 
                     alignItems='end' 
