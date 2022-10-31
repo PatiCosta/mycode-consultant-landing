@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
          <meta property="og:type" content="website"/>
          <meta property="og:title" content="My Code - Seja um(a) consultor(a)"/>
          <meta property="og:description" content="Pensado em você, feito para sua pele"/>
-         <meta property="og:image" content="https://revendamycode.vercel.app/static/img/MYCODE_TM-LOGO-MARROM-ESCURO-RGB-01.png"/>
+         <meta property="og:image" content="https://revendamycode.vercel.app/static/img/mycodeMeta.png"/>
 
          {/* <!-- Twitter Meta Tags --> */}
          <meta name="twitter:card" content="summary_large_image"/>
@@ -22,10 +22,10 @@ export default class MyDocument extends Document {
          <meta property="twitter:url" content="https://revendamycode.vercel.app/"/>
          <meta name="twitter:title" content="My Code - Seja um(a) consultor(a)"/>
          <meta name="twitter:description" content="Pensado em você, feito para sua pele"/>
-         <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/MYCODE_TM-LOGO-MARROM-ESCURO-RGB-01.png"/>
+         <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/mycodeMeta.png"/>
 
 
-         <link rel="shortcut icon" href="/static/img/dat-icon.ico" /> 
+         <link rel="shortcut icon" href="/static/img/iconMyCode.ico" /> 
          </Head>
             <body>
                <Main/>

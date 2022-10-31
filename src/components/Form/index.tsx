@@ -149,25 +149,25 @@ export function Form({formRef}) {
 
     return (
         <Grid
-            templateColumns='0.9fr 1.1fr'
+            templateColumns={{base: '1fr', sm: '1fr', md: '1fr', lg: '0.9fr 1.1fr'}}
             gap={8}
-            h='80vh'
-            px={16}
+            mx={{base: 8, sm: 8, md: 8, lg: 16}}
         >
             <Flex 
                 alignItems='center' 
                 justifyContent='center'
-                px={16}
-                my={12}
+                px={{base: 8, sm: 8, md: 8, lg: 16}}
+                py={{base: 8, sm: 8, md: 8, lg: 16}}
+                my={{base: 4, sm: 4, md: 4, lg: 12}}
                 direction='column'
                 color='beige.500'
                 bgColor='darkBrown'
                 as='form'
                 onSubmit={handleSubmit(onSubmit)}
             >
-                <Text fontWeight='bold' fontSize='4xl'>Seja uma consultora</Text>
-                <Text fontWeight='light'>Nos ajude a tornar os cuidados com a pele simples e sustentáveis</Text>
-                <InputGroup mt={16}>
+                <Text fontWeight='bold' fontSize={{base: '2xl', sm: '2xl', lg: '4xl'}}>Seja uma consultora</Text>
+                <Text fontWeight='light' fontSize={{base: 'sm', sm: 'sm', md: 'md'}}>Nos ajude a tornar os cuidados com a pele simples e sustentáveis</Text>
+                <InputGroup mt={{base: 6, sm: 6, lg: 16}}>
                     <InputLeftElement
                         pointerEvents='none'
                         children={<User size={24} color="#e6cebe" weight="duotone" />}
@@ -182,7 +182,7 @@ export function Form({formRef}) {
                             fontWeight: 'light'
                         }}
                         {...register("name")}
-                        ref={formRef}
+                        // ref={formRef}
                     />
                 </InputGroup>
                 <InputGroup mt={4}>
@@ -224,7 +224,7 @@ export function Form({formRef}) {
                     <Input 
                         type='tel'
                         variant='flushed' 
-                        placeholder='Digite seu número de telefone' 
+                        placeholder='Telefone' 
                         borderColor='beige.500' 
                         _placeholder={{
                             color: 'beige.500',
@@ -234,7 +234,7 @@ export function Form({formRef}) {
                         {...register("number")}
                     />
                 </Flex>
-                <Flex alignItems='center' mt={4} gap={4} w='100%'>
+                <Flex alignItems='center' mt={4} gap={4} w='100%' direction={{base: 'column', sm: 'column', md: 'row'}}>
                     <InputGroup>
                         <InputLeftElement
                             pointerEvents='none'
@@ -292,15 +292,15 @@ export function Form({formRef}) {
                     isLoading={isSubmitting}
                 >
                     {isSubmitSuccessful
-                        ? 'Obrigada! Em breve entraremos em contato'
-                        : 'Envie seus dados e entraremos em contato!'
+                        ? 'Obrigada!'
+                        : 'Envie seus dados'
                     }
                 </Button>
             </Flex>
             <Box
-                h='80vh'
                 py={12}
                 position='relative'
+                display={{base: 'none', sm: 'none', md: 'none', lg: 'block'}}
             >
                 <Text
                     position='absolute'

@@ -8,16 +8,15 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/l
 const pdf = 'https://revendamycode.vercel.app/static/document/catalog_compressed.pdf' 
 
 export function Catalog({catalogRef}) {
-    const catalogWidth = useBreakpointValue({
-        base:'100%',
-        sm:'100%',
-        md:'100%',
-        lg:'100%',
-        xl:'100%'
-    })
-
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
+
+    const catalogWidth = useBreakpointValue({
+        base: 360,
+        sm: 360,
+        md: 440,
+        lg: 480,
+    })
 
     function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -38,8 +37,8 @@ export function Catalog({catalogRef}) {
 
     return (
         <Grid
-            templateColumns='55% 45%'
-            h='100vh'
+            templateColumns={{base: '1fr', sm: '1fr', md: '1fr', lg: '55% 45%'}}
+            h={{base: '100%', sm: '100%', lg: '100vh'}}
             ref={catalogRef}
         >
             <Flex 
@@ -47,25 +46,40 @@ export function Catalog({catalogRef}) {
                 direction='column'
                 h='100%'
                 w='100%'
-                py={8}
+                py={{base: 2, sm: 2, md: 2, lg: 8}}
             >
-                <Flex bgColor='darkBrown' w={80} justifyContent='end'>
-                    <Image src={'static/img/MYCODE_TM-LOGO-AZUL-TEAL-RGB-01.png'} maxW={72} />
+                <Flex 
+                    bgColor='darkBrown' 
+                    w={{base: '100vw', sm: '100vw', lg: 80}} 
+                    justifyContent={{base:'center', sm: 'center', lg: 'end' }}
+                    color='tealBlue'
+                >
+                    <Image 
+                        src={'static/img/MYCODE_TM-LOGO-AZUL-TEAL-RGB-01.png'} 
+                        maxW={72} 
+                        display={{base: 'none', sm: 'none', lg: 'inline-block'}}
+                    />
+                    <Image 
+                        src={'static/img/MYCODE_TEMPLATE-OFFLINE-04-01.jpg'} 
+                        display={{base: 'inline-block', sm: 'inline-block', lg: 'none'}}
+                        w='100vw'
+                    />
                 </Flex>
-                <Flex alignItems='center' mt={16} pl={16}>
-                    <Box h={1} bgColor='darkBrown' w={24} mr={2}></Box>
-                    <Text fontSize='4xl'>Veja nosso catálogo</Text>
+                <Flex alignItems='center' mt={16} px={{base: 8, sm: 8, lg: 16}}>
+                    <Box h={1} bgColor='darkBrown' w={24} mr={2} display={{base: 'none', sm: 'none', lg: 'block'}}></Box>
+                    <Text fontSize={{base: '2xl', sm: '2xl', md: '4xl'}}>Veja nosso catálogo</Text>
                 </Flex>
-                <Text fontSize='xl' fontWeight='thin' mt={4} pr={32} pl={16}>
+                <Text fontSize={{base: 'md', sm: 'md', md: 'xl'}} fontWeight='thin' mt={4} pl={{base: 8, sm: 8, lg: 16}} pr={{base: 8, sm: 8, lg: 32}}>
                     E descubra como mudamos a vida das pessoas por meio de bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </Text>
                 <Flex
                     alignItems='center'
+                    justifyContent='center'
                     gap={4}
                     w='100%'
-                    mt={16}
-                    pr={28}
-                    pl={16}
+                    mt={{base: 8, sm: 8, lg: 16}}
+                    pr={{base: 8, sm: 8, lg: 28}}
+                    pl={{base: 8, sm: 8, lg: 16}}
                 >
                     <Image 
                         h={28}
@@ -89,7 +103,7 @@ export function Catalog({catalogRef}) {
                         objectFit='cover'
                     />
                 </Flex>
-                <Flex alignItems='center' mt='auto' pl={16}>
+                <Flex alignItems='center' mt='auto' pl={16} display={{base: 'none', sm: 'none', lg: 'flex'}}>
                     <Box h={.5} bgColor='darkBrown' w={24} mr={2}></Box>
                     <Text fontSize='2xl' fontWeight='medium' fontFamily='KissMe'>por que personalizamos tudo, menos o skincare?</Text>
                 </Flex>
@@ -99,28 +113,25 @@ export function Catalog({catalogRef}) {
                 justifyContent='center' 
                 alignItems='center' 
                 direction='column'
-                pr={16}
+                pr={{base: 0, sm: 0, lg: 16}}
                 py={8}
             >
                 <Document
                     file={pdf}
                     onLoadSuccess={onDocumentLoadSuccess}
-                    // options={{
-                    //     cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
-                    //     cMapPacked: true,
-                    //   }}
+                    options={{
+                        cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
+                        cMapPacked: true,
+                      }}
                 >
                     <Page 
                         pageNumber={pageNumber} 
-                        width={480} 
-                        // loading={
-                        //     <Image src={'static/img/MYCODE_TEXTURAS-03.png'} maxW={500} maxH='100%' objectFit='cover' />
-                        // }
+                        width={catalogWidth}
                         loading='loading'
                     />
                 </Document>
                 <Flex
-                    w='510px'
+                    w='100%'
                     pt={2}
                     color='darkBrown'
                     gap={8}

@@ -7,12 +7,12 @@ export function Footer() {
             alignItems='center'
             justifyContent='space-between'
             bgColor='darkBrown'
-            px={16}
+            px={{base: 8, sm: 8, lg: 16}}
             h='16vh'
             color='beige.500'
         >
             <Flex alignItems='center' gap={2}>
-                <Image src={'static/img/MYCODE_TM-LOGO-BEGE-RGB-01.png'} maxW={48} />
+                <Image src={'static/img/MYCODE_TM-LOGO-BEGE-RGB-01.png'} maxW={{base: 32, sm: 32, lg: 48}} />
                 <Link 
                     href='https://www.facebook.com/lovemy.code'
                     target='_blank'
@@ -31,7 +31,7 @@ export function Footer() {
                 </Link>
             </Flex>
             {/* <Text fontFamily='KissMe' fontSize='5xl' color='tealBlue'>limpeza</Text> */}
-            <Flex alignItems='center' gap={1}>
+            <Flex alignItems='center' gap={1} direction={{base: 'column', sm: 'column', lg: 'row'}}>
                 <Text>Feito por</Text>
                 <Link 
                     color='#F55F5E' 

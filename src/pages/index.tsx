@@ -15,7 +15,7 @@ export default function Home () {
   return (
     <>
       <Head>
-        <title>My Code - Feito para sua pele</title>
+        <title>My Code - Seja um consultor</title>
       </Head>
       <Header formRef={formRef} catalogRef={catalogRef} />
       <Form formRef={formRef} />
