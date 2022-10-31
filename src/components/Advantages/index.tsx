@@ -4,7 +4,7 @@ import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 export function Advantages() {
     return (
         <Grid
-            w='100vw'
+            w='100%'
             px={{base: 8, sm: 8, md: 8, lg: 16}}
             py={8}
             alignItems='center'
