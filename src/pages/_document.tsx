@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
          {/* <!-- Twitter Meta Tags --> */}
          <meta name="twitter:card" content="summary_large_image"/>
          <meta property="twitter:domain" content="revendamycode.vercel.app"/>
-         <meta property="twitter:url" content="https://revendamycode.vercel.app/"/>
+         <meta property="twitter:url" content="https://revendamycode.vercel.app//"/>
          <meta name="twitter:title" content="My Code - Seja um(a) consultor(a)"/>
          <meta name="twitter:description" content="Pensado em você, feito para sua pele"/>
          <meta name="twitter:image" content="https://revendamycode.vercel.app/static/img/mycodeMeta.png"/>
