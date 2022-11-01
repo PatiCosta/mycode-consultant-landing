@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Grid, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export function Banner() {
     const isLg = useBreakpointValue({
@@ -70,9 +70,6 @@ export function Banner() {
             bgImage="url('static/img/marco-testi-thsLtslnjos-unsplash.jpeg')"
             bgPosition='left'
             bgSize='cover'
-            // fontFamily='KissMe'
-            // fontWeight='light'
-            // fontSize='2xl'
             padding={1}
             alignItems='start'
             direction='column'

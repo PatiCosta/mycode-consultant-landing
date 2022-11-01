@@ -4,7 +4,9 @@ import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
-export function Form({formRef}) {
+export function Form({
+    // formRef
+}) {
     const [states, setStates] = useState([]);
     const [cities, setCities] = useState([]);
     let [selectedState, setSelectedState] = useState('')

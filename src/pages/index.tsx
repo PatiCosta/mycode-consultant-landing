@@ -9,7 +9,7 @@ import { useRef } from "react";
 
 
 export default function Home () {
-  const formRef = useRef(null);
+  // const formRef = useRef(null);
   const catalogRef = useRef(null);
 
   return (
@@ -17,8 +17,13 @@ export default function Home () {
       <Head>
         <title>My Code - Seja um consultor</title>
       </Head>
-      <Header formRef={formRef} catalogRef={catalogRef} />
-      <Form formRef={formRef} />
+      <Header 
+        // formRef={formRef} 
+        catalogRef={catalogRef} 
+      />
+      <Form 
+        // formRef={formRef} 
+      />
       <Banner />
       <Advantages />
       <Catalog catalogRef={catalogRef} />

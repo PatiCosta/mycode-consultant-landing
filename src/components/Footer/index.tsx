@@ -30,7 +30,7 @@ export function Footer() {
                     <InstagramLogo size={32} color="#e6cebe" weight="duotone" />
                 </Link>
             </Flex>
-            {/* <Text fontFamily='KissMe' fontSize='5xl' color='tealBlue'>limpeza</Text> */}
+            {/* <Text fontFamily='KissMe' fontSize='5xl' color='beige.500'>limpeza</Text> */}
             <Flex alignItems='center' gap={1} direction={{base: 'column', sm: 'column', lg: 'row'}}>
                 <Text>Feito por</Text>
                 <Link 

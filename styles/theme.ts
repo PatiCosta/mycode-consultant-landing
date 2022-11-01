@@ -69,14 +69,11 @@ export const theme = extendTheme({
   },
   styles: {
     global: {
-      // styles for the `body`
       body: {
         bgColor:'beige.300',
         color: 'darkBrown',
         },
-      // styles for the `a`
       a: {
-        // color: 'teal.500',
         _hover: {
           textDecoration: 'none',
         },

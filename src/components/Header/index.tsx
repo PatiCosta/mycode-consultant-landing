@@ -1,9 +1,15 @@
-import {Box, Button, Flex, Image, Text} from '@chakra-ui/react'
-import { CaretDoubleRight, Handshake } from 'phosphor-react'
+import {Button, Flex, Image, Text} from '@chakra-ui/react'
+import { 
+    CaretDoubleRight, 
+    // Handshake 
+} from 'phosphor-react'
 import { useState } from 'react'
 
-export function Header({formRef, catalogRef}) {
-    const [isConsultantButtonHovered, setIsConsultantButtonHovered] = useState(false)
+export function Header({
+    // formRef, 
+    catalogRef
+}) {
+    // const [isConsultantButtonHovered, setIsConsultantButtonHovered] = useState(false)
     const [isCatalogButtonHovered, setIsCatalogButtonHovered] = useState(false)
 
     return (
