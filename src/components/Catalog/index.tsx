@@ -1,43 +1,43 @@
 import { Box, Flex, Grid, IconButton, Image, Text, useBreakpointValue } from "@chakra-ui/react";
-import { CaretLeft, CaretRight } from "phosphor-react";
-import { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+// import { CaretLeft, CaretRight } from "phosphor-react";
+// import { useState } from 'react';
+// import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
 
-const pdf = 'https://revendamycode.vercel.app/static/document/catalog_compressed.pdf' 
+const pdf = 'https://revendamycode.vercel.app/static/document/catalog_compressed.pdf#view=FitH' 
 
 export function Catalog({catalogRef}) {
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
+    // const [numPages, setNumPages] = useState(null);
+    // const [pageNumber, setPageNumber] = useState(1);
 
     const catalogWidth = useBreakpointValue({
-        base: 360,
-        sm: 360,
-        md: 440,
-        lg: 480,
+        base: '100%',
+        sm: '100%',
+        md: '100%',
+        lg: '100%',
     })
 
-    function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-    setPageNumber(1);
-    }
+    // function onDocumentLoadSuccess({ numPages }) {
+    // setNumPages(numPages);
+    // setPageNumber(1);
+    // }
 
-    function changePage(offset) {
-    setPageNumber(prevPageNumber => prevPageNumber + offset);
-    }
+    // function changePage(offset) {
+    // setPageNumber(prevPageNumber => prevPageNumber + offset);
+    // }
 
-    function previousPage() {
-    changePage(-1);
-    }
+    // function previousPage() {
+    // changePage(-1);
+    // }
 
-    function nextPage() {
-    changePage(1);
-    }
+    // function nextPage() {
+    // changePage(1);
+    // }
 
     return (
         <Grid
-            templateColumns={{base: '1fr', sm: '1fr', md: '1fr', lg: '55% 45%'}}
+            templateColumns={{base: '1fr', sm: '1fr', md: '1fr', lg: '50% 50%'}}
             h={{base: '100%', sm: '100%', lg: '100vh'}}
             ref={catalogRef}
         >
@@ -110,13 +110,15 @@ export function Catalog({catalogRef}) {
             </Flex>
             <Flex 
                 w='100%' 
+                h='100vh'
                 justifyContent='center' 
                 alignItems='center' 
                 direction='column'
-                pr={{base: 0, sm: 0, lg: 16}}
+                pr={{base: 8, sm: 8, lg: 16}}
+                pl={{base: 8, sm: 8, md: 0, lg: 0}}
                 py={8}
             >
-                <Document
+                {/* <Document
                     file={pdf}
                     onLoadSuccess={onDocumentLoadSuccess}
                     options={{
@@ -153,9 +155,13 @@ export function Catalog({catalogRef}) {
                         onClick={nextPage}
                         colorScheme='transparent'
                     />
-                </Flex>
-                {/* <iframe src="../../assets/DiplomaPatricia.pdf" 
-                width={catalogWidth} height="92%" allow="autoplay" style={{border:"2px solid red"}}></iframe> */}
+                </Flex> */}
+                <iframe 
+                    src={pdf} 
+                    width={catalogWidth} 
+                    height="100%" 
+                    allow="autoplay"
+                />
             </Flex>
         </Grid>
     )
