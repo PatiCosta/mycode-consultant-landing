@@ -31,7 +31,7 @@ export function Footer() {
                 </Link>
             </Flex>
             {/* <Text fontFamily='KissMe' fontSize='5xl' color='beige.500'>limpeza</Text> */}
-            <Flex alignItems='center' gap={1} direction={{base: 'column', sm: 'column', lg: 'row'}}>
+            <Flex fontSize={{base: 'sm', sm: 'sm', md: 'md'}} alignItems='center' gap={1} direction={{base: 'column', sm: 'column', lg: 'row'}}>
                 <Text>Feito por</Text>
                 <Link 
                     color='#F55F5E' 
