@@ -1,15 +1,12 @@
 import {Button, Flex, Image, Text} from '@chakra-ui/react'
 import { 
     CaretDoubleRight, 
-    // Handshake 
 } from 'phosphor-react'
 import { useState } from 'react'
 
 export function Header({
-    // formRef, 
     catalogRef
 }) {
-    // const [isConsultantButtonHovered, setIsConsultantButtonHovered] = useState(false)
     const [isCatalogButtonHovered, setIsCatalogButtonHovered] = useState(false)
 
     return (
@@ -17,7 +14,7 @@ export function Header({
             alignItems='center'
             justifyContent={{base: 'start', sm: 'start', md: 'center'}}
             bgColor='beige.300'
-            mx={{base: 8, sm: 8, md: 8, lg: 16}}
+            mx={{base: 4, sm: 4, md: 4, lg: 16}}
             h='10vh'
             borderBottom='2px solid'
             borderColor='darkbrown'

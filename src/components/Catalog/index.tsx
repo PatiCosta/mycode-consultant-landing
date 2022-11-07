@@ -65,11 +65,11 @@ export function Catalog({catalogRef}) {
                         w='100vw'
                     />
                 </Flex>
-                <Flex alignItems='center' mt={16} px={{base: 8, sm: 8, lg: 16}}>
+                <Flex alignItems='center' mt={16} px={{base: 4, sm: 4, lg: 16}}>
                     <Box h={1} bgColor='darkBrown' w={24} mr={2} display={{base: 'none', sm: 'none', lg: 'block'}}></Box>
                     <Text fontSize={{base: '2xl', sm: '2xl', md: '4xl'}}>Veja nosso catálogo</Text>
                 </Flex>
-                <Text fontSize={{base: 'md', sm: 'md', md: 'xl'}} fontWeight='thin' mt={4} pl={{base: 8, sm: 8, lg: 16}} pr={{base: 8, sm: 8, lg: 32}}>
+                <Text fontSize={{base: 'md', sm: 'md', md: 'xl'}} fontWeight='thin' mt={4} pl={{base: 4, sm: 4, lg: 16}} pr={{base: 4, sm: 4, lg: 32}}>
                     E descubra como mudamos a vida das pessoas por meio de bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </Text>
                 <Flex
@@ -78,8 +78,8 @@ export function Catalog({catalogRef}) {
                     gap={4}
                     w='100%'
                     mt={{base: 8, sm: 8, lg: 16}}
-                    pr={{base: 8, sm: 8, lg: 28}}
-                    pl={{base: 8, sm: 8, lg: 16}}
+                    pr={{base: 4, sm: 4, lg: 28}}
+                    pl={{base: 4, sm: 4, lg: 16}}
                 >
                     <Image 
                         h={28}
@@ -114,8 +114,8 @@ export function Catalog({catalogRef}) {
                 justifyContent='center' 
                 alignItems='center' 
                 direction='column'
-                pr={{base: 8, sm: 8, lg: 16}}
-                pl={{base: 8, sm: 8, md: 0, lg: 0}}
+                pr={{base: 4, sm: 4, lg: 16}}
+                pl={{base: 4, sm: 4, md: 0, lg: 0}}
                 py={8}
             >
                 {/* <Document

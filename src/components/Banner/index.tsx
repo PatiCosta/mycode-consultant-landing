@@ -76,7 +76,7 @@ export function Banner() {
             justifyContent='end'
             h='24vh'
             color='tealBlue'
-            mx={8}
+            mx={4}
         >
             <Image 
                 h={12}

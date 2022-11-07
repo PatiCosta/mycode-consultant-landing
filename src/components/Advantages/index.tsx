@@ -5,7 +5,7 @@ export function Advantages() {
     return (
         <Grid
             w='100%'
-            px={{base: 8, sm: 8, md: 8, lg: 16}}
+            px={{base: 4, sm: 4, md: 4, lg: 16}}
             py={8}
             alignItems='center'
             gap={8}

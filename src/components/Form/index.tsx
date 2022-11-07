@@ -5,7 +5,6 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 
 export function Form({
-    // formRef
 }) {
     const [states, setStates] = useState([]);
     const [cities, setCities] = useState([]);
@@ -153,7 +152,7 @@ export function Form({
         <Grid
             templateColumns={{base: '1fr', sm: '1fr', md: '1fr', lg: '0.9fr 1.1fr'}}
             gap={8}
-            mx={{base: 8, sm: 8, md: 8, lg: 16}}
+            mx={{base: 4, sm: 4, md: 4, lg: 16}}
         >
             <Flex 
                 alignItems='center' 
