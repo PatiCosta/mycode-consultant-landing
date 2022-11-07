@@ -157,7 +157,7 @@ export function Catalog({catalogRef}) {
                     />
                 </Flex> */}
                 <iframe 
-                    src={pdf} 
+                    src='https://drive.google.com/file/d/1xKMhqXK9waw6LsJnSjtaJ2PfR7Poo-gJ/preview' 
                     width={catalogWidth} 
                     height="100%" 
                     allow="autoplay"
